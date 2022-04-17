@@ -33,3 +33,4 @@ echo "---" >> meta.yaml
 FILE="${1%.*}"
 pandoc "$FILE.md" meta.yaml -o "$FILE.pdf"
 rm meta.yaml
+xdg-open "$FILE.md"
